@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background-color: black;
+    overflow: hidden;
+}
+
+.gameContainer {
+    background-image: url("https://th.bing.com/th/id/OIP.B8T85G4DuTJ86GEelDWV_wHaEK?w=332&h=180&c=7&r=0&o=5&dpr=1.7&pid=1.7");
+
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.irnman {
+    background-image: url("https://i.pinimg.com/originals/a8/d5/ba/a8d5baeb06fc12c77ccefd0121010d20.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 155px;
+    height: 155px;
+    position: absolute;
+    bottom: 200px;
+    left: 52px;
+}
+
+.thanos {
+    width: 250px;
+    height: 145px;
+    background-image: url("https://wordman.neocities.org/comics/avengers/Thanos_standfierce.gif");
+    background-size: cover;
+    position: absolute;
+    bottom: 200px;
+    left: 44vw;
+}
+
+.animateIrnman {
+    animation: animateIrnman 0.6s linear;
+}
+
+.animateThanos {
+    animation: animateThanos 5s linear infinite;
+}
+
+.gameOver {
+    position: relative;
+    top: 63px;
+    font-size: 53px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#scoreCont {
+    font-size: 25px;
+    color: #e7e2e4;
+    font-weight: bold;
+    position: absolute;
+    right: 45px;
+    top: 31px;
+    border: 2px solid black;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+}
+
+@keyframes animateIrnman {
+    0% {
+        bottom: 200px;
+    }
+
+    50% {
+        bottom: 700px;
+    }
+
+    100% {
+        bottom: 200px;
+    }
+}
+
+@keyframes animateThanos {
+    0% {
+        left: 100vw;
+    }
+
+    100% {
+        left: -10vw;
+    }
+}
